@@ -2,9 +2,9 @@
 title: 安装Go
 date: 2019-07-06 23:19:43
 tags: 
--Go
-categories: 
--软件开发
+- Go
+categories:
+- 软件开发
 ---
 
 # Linux下安装Go

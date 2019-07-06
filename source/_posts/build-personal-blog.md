@@ -61,11 +61,6 @@ sudo apt-get install sublime-text
 sudo apt-get remove --autoremove sublime-text
 
 
-
-export NODE_HOME=/usr/local/n/versions/node/10.16.0
-export PATH=$NODE_HOME/bin:$PATH
-
-
 npm install -g hexo-cli
 npm install hexo --save
 

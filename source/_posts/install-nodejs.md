@@ -2,6 +2,7 @@
 title: 安装Node.js
 date: 2019-07-06 17:24:32
 tags: 
+- Node.js
 ---
 
 # Linux下安装Node.js

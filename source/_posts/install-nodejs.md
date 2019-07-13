@@ -3,6 +3,8 @@ title: 安装Node.js
 date: 2019-07-06 17:24:32
 tags: 
 - Node.js
+categories:
+- 软件开发
 ---
 
 # Linux下安装Node.js
@@ -35,3 +37,9 @@ $ npm -v
 6.9.0
 ```
 
+# Windows下安装Node.js
+
+## 下载并安装
+从[Node.js](https://nodejs.org/en/)的官网，下载安装包node-v10.16.0-x64.msi，双击并安装
+
+注：验证方法参考Linux下的方法

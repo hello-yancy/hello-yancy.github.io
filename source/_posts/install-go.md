@@ -10,7 +10,7 @@ categories:
 # Linux下安装Go
 
 ## 下载并安装
-从[Go](https://golang.google.cn/)的官网，下载安装包go1.12.6.linux-amd64.tar.gz，并上传至后台`/usr/local/src`
+从[Go的官网](https://golang.google.cn/)，下载安装包go1.12.6.linux-amd64.tar.gz，并上传至后台`/usr/local/src`
 
 ```
 cd /usr/local/src
@@ -61,6 +61,52 @@ CGO_FFLAGS="-g -O2"
 CGO_LDFLAGS="-g -O2"
 PKG_CONFIG="pkg-config"
 GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build428916699=/tmp/go-build -gno-record-gcc-switches"
+```
+
+# Windows下安装Go
+
+## 下载并安装
+从[Go的官网](https://golang.google.cn/)，下载安装包go1.12.7.windows-amd64.msi，双击并安装
+
+## 配置环境变量
+安装完成之后，会在Windows的环境变量中，自动增加GOROOT和GOPATH变量。如果缺少，按照`go env`命令中的路径添加这两个变量。
+
+## 验证安装结果
+使用`go version`命令，验证安装是否成功，示例如下：
+```
+$ go version
+go version go1.12.7 windows/amd64
+```
+
+使用`go env`命令，查看Go的配置信息，示例如下：
+```
+$ go env
+set GOARCH=amd64
+set GOBIN=
+set GOCACHE=C:\Users\yancy\AppData\Local\go-build
+set GOEXE=.exe
+set GOFLAGS=
+set GOHOSTARCH=amd64
+set GOHOSTOS=windows
+set GOOS=windows
+set GOPATH=C:\Users\yancy\go
+set GOPROXY=
+set GORACE=
+set GOROOT=c:\go
+set GOTMPDIR=
+set GOTOOLDIR=c:\go\pkg\tool\windows_amd64
+set GCCGO=gccgo
+set CC=gcc
+set CXX=g++
+set CGO_ENABLED=1
+set GOMOD=
+set CGO_CFLAGS=-g -O2
+set CGO_CPPFLAGS=
+set CGO_CXXFLAGS=-g -O2
+set CGO_FFLAGS=-g -O2
+set CGO_LDFLAGS=-g -O2
+set PKG_CONFIG=pkg-config
+set GOGCCFLAGS=-m64 -mthreads -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=C:\Users\yancy\AppData\Local\Temp\go-build180734434=/tmp/go-build -gno-record-gcc-switches
 ```
 
 # 安装Beego

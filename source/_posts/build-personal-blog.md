@@ -9,12 +9,24 @@ tags:
 
 # 搭建新博客
 
-
-
-# 从github上下载博客
-
 npm install -g hexo-cli
+
+# 搭建已有博客
+
+从github上下载个人博客系统的源代码，并安装相关依赖：
+```
+mkdir ~/workspace/hexo
+cd ~/workspace/hexo
+git clone https://github.com/hello-yancy/hello-yancy.github.io
+cd hello-yancy.github.io
 npm install hexo --save
+```
+编译并部署博客：
+```
+hexo g
+hexo a
+```
+访问http://localhost:4000，验证博客是否正常
 
 # Hexo发布博客引用自带图片的方法
 

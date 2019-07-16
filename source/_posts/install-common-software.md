@@ -62,3 +62,4 @@ sudo apt-get remove --autoremove sublime-text
 # 参考文档
 
 1. [如何在Ubuntu 18.04中安装Sublime Text 3.2](https://www.linuxidc.com/Linux/2019-03/157533.htm)
+```

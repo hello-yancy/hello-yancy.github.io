@@ -7,6 +7,29 @@ categories:
 - 软件开发
 ---
 
+# Linux下安装Git
+Ubuntu18.04通过以下方法安装
+## 更新系统和apt包列表
+```
+sudo apt-get update -y
+sudo apt-get upgrade -y
+```
+注：
++ apt update：只检查，不更新
++ apt upgrade：更新已安装的软件包
+
+## 安装Git
+```
+sudo apt-get install git
+```
+
+## 验证安装结果
+使用`git --version`命令，验证安装是否成功，示例如下：
+```
+$ git --version
+git version 2.17.1
+```
+
 # Windows下安装Git
 
 ## 下载并安装
@@ -19,6 +42,7 @@ categories:
 git config --global user.name "用户名"
 git config --global user.email "邮箱地址"
 ```
+使用git config --list查看设置的信息
 
 # 参考文档
 

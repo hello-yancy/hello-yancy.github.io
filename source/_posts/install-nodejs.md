@@ -15,9 +15,9 @@ categories:
 ```
 cd /usr/local/src
 xz -d node-v10.16.0-linux-x64.tar.xz
-tar -xf node-v10.16.0-linux-x64.tar.xz
+tar -xf node-v10.16.0-linux-x64.tar
 mv node-v10.16.0-linux-x64 /opt/node
-chmod 750 -R /opt/node
+chmod 755 -R /opt/node
 ```
 
 ## 配置环境变量

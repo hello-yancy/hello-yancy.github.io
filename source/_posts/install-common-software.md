@@ -82,8 +82,39 @@ Download: 28.71 Mbit/s
 Testing upload speed.........
 ```
 
+# 4、Ubuntu18.04安装uGet
 
+## 添加uGet软件源
+```
+sudo add-apt-repository ppa:plushuang-tw/uget-stable
+```
+
+## 更新uGet软件源
+```
+sudo apt-get update
+```
+
+## 安装uGet
+```
+sudo apt-get install uget
+```
+
+## 添加aria2软件源
+```
+sudo add-apt-repository ppa:t-tujikawa/ppa
+```
+
+## 安装aria2
+```
+sudo apt-get install uget
+```
+
+## 配置aria2
+1. 打开uGet软件，从菜单中选择“编辑 > 设置”，并在弹出的界面中选择“插件”
+2. 选择插件匹配顺序为`aria2`，并设置参数`--enable-rpc=true -D --disable-ipv6 --check-certificate=false`
+3. 重启uGet，使配置生效
 
 # 参考文档
 
 1. [如何在Ubuntu 18.04中安装Sublime Text 3.2](https://www.linuxidc.com/Linux/2019-03/157533.htm)
+2. [如何给ubuntu安装一个类似迅雷的下载软件](https://jingyan.baidu.com/article/215817f740f01a1eda1423f3.html)

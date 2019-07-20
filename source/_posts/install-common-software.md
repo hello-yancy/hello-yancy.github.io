@@ -1,11 +1,14 @@
 ---
 title: 安装常用软件
 date: 2019-07-14 00:45:20
-tags:
+tags: 
+- 常用软件
 categories:
+- 软件开发
+---
 ---
 
-# Ubuntu18.04安装Chrome浏览器
+# 1、Ubuntu18.04安装Chrome浏览器
 
 ## 将Chrome的下载源添加到系统的源列表中（添加依赖）
 ```
@@ -32,7 +35,7 @@ sudo apt-get install google-chrome-stable
 /usr/bin/google-chrome-stable
 ```
 
-# Ubuntu18.04安装Sublime
+# 2、Ubuntu18.04安装Sublime
 
 ## 添加密匙
 ```
@@ -57,9 +60,30 @@ sudo apt-get install sublime-text
 ## 卸载Sublime Text
 ```
 sudo apt-get remove --autoremove sublime-text
+```
+
+# 3、Ubuntu18.04安装speedtest-cli
+
+## 命令安装
+```
+sudo apt install speedtest-cli
+```
+
+## 使用方法
+```
+$ speedtest-cli
+Retrieving speedtest.net configuration...
+Testing from China Telecom SHAANXI (113.135.80.168)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by China Unicom Lanzhou Branch Co.Ltd (Lanzhou) [506.27 km]: 18.696 ms
+Testing download speed................................................................................
+Download: 28.71 Mbit/s
+Testing upload speed.........
+```
+
 
 
 # 参考文档
 
 1. [如何在Ubuntu 18.04中安装Sublime Text 3.2](https://www.linuxidc.com/Linux/2019-03/157533.htm)
-```

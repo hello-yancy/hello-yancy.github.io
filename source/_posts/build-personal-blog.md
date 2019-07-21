@@ -7,12 +7,26 @@ tags:
 - Hexo
 ---
 
-# 搭建博客
+本文介绍如何使用Github + Node.js + Hexo 搭建个人博客
 
-npm install -g hexo-cli
+# 1. 准备环境
 
-# 优化博客
+1.1 安装Git
+参考[Git的安装方法](https://hello-yancy.github.io/2019/07/14/install-git/)
 
+1.2 安装Node.js
+参考[Node.js的安装方法](https://hello-yancy.github.io/2019/07/06/install-nodejs/)
+
+1.3 安装Hexo
+使用`npm install -g hexo-cli`命令安装
+
+# 2. 创建博客
+使用如下方法创建新的博客，
+```
+hexo init myBlog
+cd myBlog
+npm install
+```
 
 
 # 重建博客

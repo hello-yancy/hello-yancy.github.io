@@ -419,24 +419,21 @@
       
         
           
-            <h1 id="Linux下安装GCC"><a href="#Linux下安装GCC" class="headerlink" title="Linux下安装GCC"></a>Linux下安装GCC</h1><p>由于CMake的编译安装需要依赖gcc，因此要先安装gcc</p>
-<h2 id="Ubuntu18-04下安装"><a href="#Ubuntu18-04下安装" class="headerlink" title="Ubuntu18.04下安装"></a>Ubuntu18.04下安装</h2><p>Ubuntu提供了一个build-essential软件包，该软件包提供了编译c/c++所需要的所有软件包。查看build-essential软件包的依赖关系如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ apt-cache depends build-essential</span><br><span class="line">build-essential</span><br><span class="line"> |依赖: libc6-dev</span><br><span class="line">  依赖: &lt;libc-dev&gt;</span><br><span class="line">    libc6-dev</span><br><span class="line">  依赖: gcc</span><br><span class="line">  依赖: g++</span><br><span class="line">  依赖: make</span><br><span class="line">    make-guile</span><br><span class="line">  依赖: dpkg-dev</span><br></pre></td></tr></table></figure>
-
-<p>因此，只需要执行以下命令安装build-essential，相关依赖的gcc等就会被安装了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install build-essential</span><br></pre></td></tr></table></figure>
-
-<h2 id="验证安装结果"><a href="#验证安装结果" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>gcc --version</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ gcc --version</span><br><span class="line">gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0</span><br><span class="line">Copyright (C) 2017 Free Software Foundation, Inc.</span><br><span class="line">This is free software; see the source for copying conditions.  There is NO</span><br><span class="line">warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</span><br></pre></td></tr></table></figure>
-
-<h1 id="Linux下安装CMake"><a href="#Linux下安装CMake" class="headerlink" title="Linux下安装CMake"></a>Linux下安装CMake</h1><h2 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>从<a href="https://cmake.org/download/" target="_blank" rel="noopener">CMake的官网</a>，下载源代码包cmake-3.15.1.tar.gz，并上传至后台<code>/usr/local/src</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">tar -xzf cmake-3.15.1.tar.gz</span><br><span class="line"></span><br><span class="line">cd /usr/local/src/cmake-3.15.0</span><br><span class="line">./bootstrap</span><br><span class="line">make</span><br><span class="line">sudo make instal</span><br></pre></td></tr></table></figure>
-
-<h2 id="验证安装结果-1"><a href="#验证安装结果-1" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>cmake --version</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cmake --version</span><br><span class="line">cmake version 3.15.0</span><br><span class="line"></span><br><span class="line">CMake suite maintained and supported by Kitware (kitware.com/cmake).</span><br></pre></td></tr></table></figure>
-
-
+            <p>
+              Linux下安装GCC由于CMake的编译安装需要依赖gcc，因此要先安装gcc
+Ubuntu18.04下安装Ubuntu提供了一个build-essential软件包，该软件包提供了编译c/c++所需要的所有软件包。查看build-essential软件包的依赖关系如下：
+$ apt-cache 
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/20/install-cmake/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -576,21 +573,19 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <p>
+              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/19/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -759,29 +754,27 @@
       
         
           
-            <h1 id="Linux下安装Git"><a href="#Linux下安装Git" class="headerlink" title="Linux下安装Git"></a>Linux下安装Git</h1><p>Ubuntu18.04通过以下方法安装</p>
-<h2 id="更新系统和apt包列表"><a href="#更新系统和apt包列表" class="headerlink" title="更新系统和apt包列表"></a>更新系统和apt包列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update -y</span><br><span class="line">sudo apt-get upgrade -y</span><br></pre></td></tr></table></figure>
+            <p>
+              Linux下安装GitUbuntu18.04通过以下方法安装
+更新系统和apt包列表sudo apt-get update -ysudo apt-get upgrade -y
 
-<p>注：</p>
-<ul>
-<li>apt update：只检查，不更新</li>
-<li>apt upgrade：更新已安装的软件包</li>
-</ul>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+注：
 
-<h2 id="验证安装结果"><a href="#验证安装结果" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>git --version</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br><span class="line">git version 2.17.1</span><br></pre></td></tr></table></figure>
+apt update：只检查，不更新
+apt upgrade：更新已安装的软件包
 
-<h1 id="Windows下安装Git"><a href="#Windows下安装Git" class="headerlink" title="Windows下安装Git"></a>Windows下安装Git</h1><h2 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>从<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git官网</a>，下载安装包Git-2.22.0-64-bit.exe，双击并安装。如果觉得官网速度慢，可以从<a href="https://pc.qq.com/detail/13/detail_22693.html" target="_blank" rel="noopener">腾讯软件中心</a>下载安装包</p>
-<h1 id="配置Git的账户"><a href="#配置Git的账户" class="headerlink" title="配置Git的账户"></a>配置Git的账户</h1><p>使用以下命令配置Git的账户，其中用户名和邮箱采用和github相同的用户名和邮箱</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br><span class="line">git config --global user.email &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
-
-<p>使用git config –list查看设置的信息</p>
-<h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><ol>
-<li><a href="https://www.cnblogs.com/smuxiaolei/p/7484678.html" target="_blank" rel="noopener">Git 安装和使用教程</a></li>
-</ol>
-
+安装Gitsudo apt-g
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/14/install-git/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -950,52 +943,22 @@
       
         
           
-            <hr>
-<h1 id="1、Ubuntu18-04安装Chrome浏览器"><a href="#1、Ubuntu18-04安装Chrome浏览器" class="headerlink" title="1、Ubuntu18.04安装Chrome浏览器"></a>1、Ubuntu18.04安装Chrome浏览器</h1><h2 id="将Chrome的下载源添加到系统的源列表中（添加依赖）"><a href="#将Chrome的下载源添加到系统的源列表中（添加依赖）" class="headerlink" title="将Chrome的下载源添加到系统的源列表中（添加依赖）"></a>将Chrome的下载源添加到系统的源列表中（添加依赖）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/</span><br></pre></td></tr></table></figure>
+            <p>
+              
+1、Ubuntu18.04安装Chrome浏览器将Chrome的下载源添加到系统的源列表中（添加依赖）sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/
 
-<h2 id="导入谷歌的公匙，用于对下载软件进行验证"><a href="#导入谷歌的公匙，用于对下载软件进行验证" class="headerlink" title="导入谷歌的公匙，用于对下载软件进行验证"></a>导入谷歌的公匙，用于对下载软件进行验证</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -</span><br></pre></td></tr></table></figure>
-
-<h2 id="对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）"><a href="#对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）" class="headerlink" title="对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）"></a>对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装谷歌Chrome浏览器（安装软件）"><a href="#安装谷歌Chrome浏览器（安装软件）" class="headerlink" title="安装谷歌Chrome浏览器（安装软件）"></a>安装谷歌Chrome浏览器（安装软件）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install google-chrome-stable</span><br></pre></td></tr></table></figure>
-
-<h2 id="启动谷歌Chrome浏览器"><a href="#启动谷歌Chrome浏览器" class="headerlink" title="启动谷歌Chrome浏览器"></a>启动谷歌Chrome浏览器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/google-chrome-stable</span><br></pre></td></tr></table></figure>
-
-<h1 id="2、Ubuntu18-04安装Sublime"><a href="#2、Ubuntu18-04安装Sublime" class="headerlink" title="2、Ubuntu18.04安装Sublime"></a>2、Ubuntu18.04安装Sublime</h1><h2 id="添加密匙"><a href="#添加密匙" class="headerlink" title="添加密匙"></a>添加密匙</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure>
-
-<h2 id="添加apt存储库"><a href="#添加apt存储库" class="headerlink" title="添加apt存储库"></a>添加apt存储库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb https://download.sublimetext.com/ apt/stable/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br></pre></td></tr></table></figure>
-
-<h2 id="对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）-1"><a href="#对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）-1" class="headerlink" title="对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）"></a>对当前系统的可用更新列表进行更新，获取最新的软件版本信息（更新依赖）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装Sublime-Text"><a href="#安装Sublime-Text" class="headerlink" title="安装Sublime Text"></a>安装Sublime Text</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install sublime-text</span><br></pre></td></tr></table></figure>
-
-<h2 id="卸载Sublime-Text"><a href="#卸载Sublime-Text" class="headerlink" title="卸载Sublime Text"></a>卸载Sublime Text</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove --autoremove sublime-text</span><br></pre></td></tr></table></figure>
-
-<h1 id="3、Ubuntu18-04安装speedtest-cli"><a href="#3、Ubuntu18-04安装speedtest-cli" class="headerlink" title="3、Ubuntu18.04安装speedtest-cli"></a>3、Ubuntu18.04安装speedtest-cli</h1><h2 id="命令安装"><a href="#命令安装" class="headerlink" title="命令安装"></a>命令安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install speedtest-cli</span><br></pre></td></tr></table></figure>
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ speedtest-cli</span><br><span class="line">Retrieving speedtest.net configuration...</span><br><span class="line">Testing from China Telecom SHAANXI (113.135.80.168)...</span><br><span class="line">Retrieving speedtest.net server list...</span><br><span class="line">Selecting best server based on ping...</span><br><span class="line">Hosted by China Unicom Lanzhou Branch Co.Ltd (Lanzhou) [506.27 km]: 18.696 ms</span><br><span class="line">Testing download speed................................................................................</span><br><span class="line">Download: 28.71 Mbit/s</span><br><span class="line">Testing upload speed.........</span><br></pre></td></tr></table></figure>
-
-<h1 id="4、Ubuntu18-04安装uGet"><a href="#4、Ubuntu18-04安装uGet" class="headerlink" title="4、Ubuntu18.04安装uGet"></a>4、Ubuntu18.04安装uGet</h1><h2 id="添加uGet软件源"><a href="#添加uGet软件源" class="headerlink" title="添加uGet软件源"></a>添加uGet软件源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:plushuang-tw/uget-stable</span><br></pre></td></tr></table></figure>
-
-<h2 id="更新uGet软件源"><a href="#更新uGet软件源" class="headerlink" title="更新uGet软件源"></a>更新uGet软件源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装uGet"><a href="#安装uGet" class="headerlink" title="安装uGet"></a>安装uGet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install uget</span><br></pre></td></tr></table></figure>
-
-<h2 id="添加aria2软件源"><a href="#添加aria2软件源" class="headerlink" title="添加aria2软件源"></a>添加aria2软件源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:t-tujikawa/ppa</span><br></pre></td></tr></table></figure>
-
-<h2 id="安装aria2"><a href="#安装aria2" class="headerlink" title="安装aria2"></a>安装aria2</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install uget</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置aria2"><a href="#配置aria2" class="headerlink" title="配置aria2"></a>配置aria2</h2><ol>
-<li>打开uGet软件，从菜单中选择“编辑 &gt; 设置”，并在弹出的界面中选择“插件”</li>
-<li>选择插件匹配顺序为<code>aria2</code>，并设置参数<code>--enable-rpc=true -D --disable-ipv6 --check-certificate=false</code></li>
-<li>重启uGet，使配置生效</li>
-</ol>
-<h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><ol>
-<li><a href="https://www.linuxidc.com/Linux/2019-03/157533.htm" target="_blank" rel="noopener">如何在Ubuntu 18.04中安装Sublime Text 3.2</a></li>
-<li><a href="https://jingyan.baidu.com/article/215817f740f01a1eda1423f3.html" target="_blank" rel="noopener">如何给ubuntu安装一个类似迅雷的下载软件</a></li>
-</ol>
-
+导入谷歌的公匙，用于对
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/14/install-common-software/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1164,41 +1127,22 @@
       
         
           
-            <h1 id="Linux下安装Go"><a href="#Linux下安装Go" class="headerlink" title="Linux下安装Go"></a>Linux下安装Go</h1><h2 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>从<a href="https://golang.google.cn/" target="_blank" rel="noopener">Go的官网</a>，下载安装包go1.12.6.linux-amd64.tar.gz，并上传至后台<code>/usr/local/src</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">tar -C /opt -xzf go1.12.6.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure>
+            <p>
+              Linux下安装Go下载并安装从Go的官网，下载安装包go1.12.6.linux-amd64.tar.gz，并上传至后台/usr/local/src
+cd /usr/local/srctar -C /opt -xzf go1.12.6.linux-amd64.tar.gz
 
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>打开/etc/profile文件，并在该文件中增加以下内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export GO_ROOT=/opt/go</span><br><span class="line">export PATH=$GO_ROOT/bin:$PATH</span><br></pre></td></tr></table></figure>
-
-<p>执行<code>source /etc/profile</code>使配置生效</p>
-<h2 id="验证安装结果"><a href="#验证安装结果" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>go version</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ go version</span><br><span class="line">go version go1.12.6 linux/amd64</span><br></pre></td></tr></table></figure>
-
-<p>使用<code>go env</code>命令，查看Go的配置信息，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">$ go env</span><br><span class="line">GOARCH=&quot;amd64&quot;</span><br><span class="line">GOBIN=&quot;&quot;</span><br><span class="line">GOCACHE=&quot;/home/yancy/.cache/go-build&quot;</span><br><span class="line">GOEXE=&quot;&quot;</span><br><span class="line">GOFLAGS=&quot;&quot;</span><br><span class="line">GOHOSTARCH=&quot;amd64&quot;</span><br><span class="line">GOHOSTOS=&quot;linux&quot;</span><br><span class="line">GOOS=&quot;linux&quot;</span><br><span class="line">GOPATH=&quot;/home/yancy/go&quot;</span><br><span class="line">GOPROXY=&quot;&quot;</span><br><span class="line">GORACE=&quot;&quot;</span><br><span class="line">GOROOT=&quot;/opt/go&quot;</span><br><span class="line">GOTMPDIR=&quot;&quot;</span><br><span class="line">GOTOOLDIR=&quot;/opt/go/pkg/tool/linux_amd64&quot;</span><br><span class="line">GCCGO=&quot;gccgo&quot;</span><br><span class="line">CC=&quot;gcc&quot;</span><br><span class="line">CXX=&quot;g++&quot;</span><br><span class="line">CGO_ENABLED=&quot;1&quot;</span><br><span class="line">GOMOD=&quot;&quot;</span><br><span class="line">CGO_CFLAGS=&quot;-g -O2&quot;</span><br><span class="line">CGO_CPPFLAGS=&quot;&quot;</span><br><span class="line">CGO_CXXFLAGS=&quot;-g -O2&quot;</span><br><span class="line">CGO_FFLAGS=&quot;-g -O2&quot;</span><br><span class="line">CGO_LDFLAGS=&quot;-g -O2&quot;</span><br><span class="line">PKG_CONFIG=&quot;pkg-config&quot;</span><br><span class="line">GOGCCFLAGS=&quot;-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build428916699=/tmp/go-build -gno-record-gcc-switches&quot;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Windows下安装Go"><a href="#Windows下安装Go" class="headerlink" title="Windows下安装Go"></a>Windows下安装Go</h1><h2 id="下载并安装-1"><a href="#下载并安装-1" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>从<a href="https://golang.google.cn/" target="_blank" rel="noopener">Go的官网</a>，下载安装包go1.12.7.windows-amd64.msi，双击并安装</p>
-<h2 id="配置环境变量-1"><a href="#配置环境变量-1" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>安装完成之后，会在Windows的环境变量中，自动增加GOROOT和GOPATH变量。如果缺少，按照<code>go env</code>命令中的路径添加这两个变量。</p>
-<h2 id="验证安装结果-1"><a href="#验证安装结果-1" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>go version</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ go version</span><br><span class="line">go version go1.12.7 windows/amd64</span><br></pre></td></tr></table></figure>
-
-<p>使用<code>go env</code>命令，查看Go的配置信息，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">$ go env</span><br><span class="line">set GOARCH=amd64</span><br><span class="line">set GOBIN=</span><br><span class="line">set GOCACHE=C:\Users\yancy\AppData\Local\go-build</span><br><span class="line">set GOEXE=.exe</span><br><span class="line">set GOFLAGS=</span><br><span class="line">set GOHOSTARCH=amd64</span><br><span class="line">set GOHOSTOS=windows</span><br><span class="line">set GOOS=windows</span><br><span class="line">set GOPATH=C:\Users\yancy\go</span><br><span class="line">set GOPROXY=</span><br><span class="line">set GORACE=</span><br><span class="line">set GOROOT=c:\go</span><br><span class="line">set GOTMPDIR=</span><br><span class="line">set GOTOOLDIR=c:\go\pkg\tool\windows_amd64</span><br><span class="line">set GCCGO=gccgo</span><br><span class="line">set CC=gcc</span><br><span class="line">set CXX=g++</span><br><span class="line">set CGO_ENABLED=1</span><br><span class="line">set GOMOD=</span><br><span class="line">set CGO_CFLAGS=-g -O2</span><br><span class="line">set CGO_CPPFLAGS=</span><br><span class="line">set CGO_CXXFLAGS=-g -O2</span><br><span class="line">set CGO_FFLAGS=-g -O2</span><br><span class="line">set CGO_LDFLAGS=-g -O2</span><br><span class="line">set PKG_CONFIG=pkg-config</span><br><span class="line">set GOGCCFLAGS=-m64 -mthreads -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=C:\Users\yancy\AppData\Local\Temp\go-build180734434=/tmp/go-build -gno-record-gcc-switches</span><br></pre></td></tr></table></figure>
-
-<h1 id="安装Beego"><a href="#安装Beego" class="headerlink" title="安装Beego"></a>安装Beego</h1><h2 id="下载并安装-2"><a href="#下载并安装-2" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>由于无法使用<code>go get github.com/astaxie/beego</code>命令直接下载安装，那么以下介绍离线方式安装，首先从<a href="https://github.com/astaxie/beego" target="_blank" rel="noopener">Beego的代码库</a>，下载安装包beego-1.12.0.zip，并上传至后台<code>$GOPATH/src/github.com/astaxie</code>，然后执行以下命令安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /home/yancy/go/src/github.com/astaxie</span><br><span class="line">unzip beego-1.12.0.zip</span><br><span class="line">mv beego-1.12.0 beego</span><br><span class="line">go get github.com/astaxie/beego</span><br></pre></td></tr></table></figure>
-
-<h2 id="验证安装结果-2"><a href="#验证安装结果-2" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>参考<a href="https://beego.me/" target="_blank" rel="noopener">Beego官网</a>中的方法验证</p>
-<h1 id="安装Bee"><a href="#安装Bee" class="headerlink" title="安装Bee"></a>安装Bee</h1><h2 id="下载并安装-3"><a href="#下载并安装-3" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>采用离线方式安装，首先从<a href="https://github.com/beego/bee" target="_blank" rel="noopener">Bee的代码库</a>，下载安装包beego-1.12.0.zip，并上传至后台<code>$GOPATH/src/github.com/astaxie</code>，然后执行以下命令安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /home/yancy/go/src/github.com/beego</span><br><span class="line">unzip bee-1.10.0.zip</span><br><span class="line">mv bee-1.10.0 bee</span><br><span class="line">go get github.com/beego/bee</span><br></pre></td></tr></table></figure>
-
-<p>注：执行<code>go get github.com/beego/bee</code>后，会在$GOPATH/bin下生成bee工具</p>
-<h2 id="配置环境变量-2"><a href="#配置环境变量-2" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>打开/etc/profile文件，并在该文件中增加以下内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export GO_PATH=/home/yancy/go</span><br><span class="line">export PATH=$GO_PATH/bin:$PATH</span><br></pre></td></tr></table></figure>
-
-<h2 id="验证安装结果-3"><a href="#验证安装结果-3" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>bee version</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$bee version</span><br><span class="line">______</span><br><span class="line">| ___ \</span><br><span class="line">| |_/ /  ___   ___</span><br><span class="line">| ___ \ / _ \ / _ \</span><br><span class="line">| |_/ /|  __/|  __/</span><br><span class="line">\____/  \___| \___| v1.10.0</span><br><span class="line"></span><br><span class="line">├── Beego     : </span><br><span class="line">├── GoVersion : go1.12.6</span><br><span class="line">├── GOOS      : linux</span><br><span class="line">├── GOARCH    : amd64</span><br><span class="line">├── NumCPU    : 4</span><br><span class="line">├── GOPATH    : </span><br><span class="line">├── GOROOT    : /opt/go</span><br><span class="line">├── Compiler  : gc</span><br><span class="line">└── Date      : Sunday, 7 Jul 2019</span><br></pre></td></tr></table></figure>
+配置环境变量打开/et
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/06/install-go/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1367,20 +1311,20 @@
       
         
           
-            <h1 id="Linux下安装Node-js"><a href="#Linux下安装Node-js" class="headerlink" title="Linux下安装Node.js"></a>Linux下安装Node.js</h1><h2 id="下载并安装"><a href="#下载并安装" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>从<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>的官网，下载安装包node-v10.16.0-linux-x64.tar.xz，并上传至后台</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src</span><br><span class="line">xz -d node-v10.16.0-linux-x64.tar.xz</span><br><span class="line">tar -xf node-v10.16.0-linux-x64.tar</span><br><span class="line">mv node-v10.16.0-linux-x64 /opt/node</span><br><span class="line">chmod 755 -R /opt/node</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>打开/etc/profile文件，并在该文件的底部增加如下内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export NODE_HOME=/opt/node</span><br><span class="line">export PATH=$NODE_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
-
-<p>执行<code>source /etc/profile</code>使配置生效</p>
-<h2 id="验证安装结果"><a href="#验证安装结果" class="headerlink" title="验证安装结果"></a>验证安装结果</h2><p>使用<code>node -v</code>和<code>npm -v</code>命令，验证安装是否成功，示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v10.16.0</span><br><span class="line">$ npm -v</span><br><span class="line">6.9.0</span><br></pre></td></tr></table></figure>
-
-<h1 id="Windows下安装Node-js"><a href="#Windows下安装Node-js" class="headerlink" title="Windows下安装Node.js"></a>Windows下安装Node.js</h1><h2 id="下载并安装-1"><a href="#下载并安装-1" class="headerlink" title="下载并安装"></a>下载并安装</h2><p>从<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>的官网，下载安装包node-v10.16.0-x64.msi，双击并安装</p>
-<p>注：验证方法参考Linux下的方法</p>
-
+            <p>
+              Linux下安装Node.js下载并安装从Node.js的官网，下载安装包node-v10.16.0-linux-x64.tar.xz，并上传至后台
+cd /usr/local/srcxz -d node-v10.16.0-linux-x64.tar.xztar -xf node-v10.16.0-
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/06/install-nodejs/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1495,7 +1439,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-20 09:40:45" itemprop="dateModified" datetime="2019-07-20T09:40:45+08:00">2019-07-20</time>
+                <time title="修改时间：2019-07-21 01:02:21" itemprop="dateModified" datetime="2019-07-21T01:02:21+08:00">2019-07-21</time>
               </span>
             
           
@@ -1549,21 +1493,23 @@
       
         
           
-            <h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><p>npm install -g hexo-cli</p>
-<h1 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h1><h1 id="重建博客"><a href="#重建博客" class="headerlink" title="重建博客"></a>重建博客</h1><p>从github上下载个人博客系统的源代码，并安装相关依赖：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p ~/workspace/hexo</span><br><span class="line">cd ~/workspace/hexo</span><br><span class="line">git clone https://github.com/hello-yancy/hello-yancy.github.io</span><br><span class="line">cd hello-yancy.github.io</span><br><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure>
-
-<p>编译并部署博客：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>访问<a href="http://localhost:4000，验证博客是否正常" target="_blank" rel="noopener">http://localhost:4000，验证博客是否正常</a></p>
-<h1 id="Hexo发布博客引用自带图片的方法"><a href="#Hexo发布博客引用自带图片的方法" class="headerlink" title="Hexo发布博客引用自带图片的方法"></a>Hexo发布博客引用自带图片的方法</h1><h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><ol>
-<li><a href="https://segmentfault.com/a/1190000017986794#articleHeader2" target="_blank" rel="noopener">超详细Hexo+Github Page搭建技术博客教程</a></li>
-<li><a href="https://www.jianshu.com/p/cf0628478a4e" target="_blank" rel="noopener">Hexo发布博客引用自带图片的方法</a></li>
-</ol>
-<p><a href="https://www.jianshu.com/p/1f8107a8778c" target="_blank" rel="noopener">https://www.jianshu.com/p/1f8107a8778c</a></p>
-
+            <p>
+              本文介绍如何使用Github + Node.js + Hexo 搭建个人博客
+1. 准备环境1.1 安装Git参考Git的安装方法
+1.2 安装Node.js参考Node.js的安装方法
+1.3 安装Hexo使用npm install -g hexo-cli命令安装
+2. 创建博客使用如下方法创建新
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/07/05/build-personal-blog/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>

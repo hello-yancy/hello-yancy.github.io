@@ -53,7 +53,7 @@ tar -xzf cmake-3.15.1.tar.gz
 cd /usr/local/src/cmake-3.15.0
 ./bootstrap
 make
-sudo make instal
+make install
 ```
 
 ## 验证安装结果
@@ -65,3 +65,13 @@ cmake version 3.15.0
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
+# MacOS下安装CMake
+使用如下命令安装
+```
+brew install cmake
+```
+注：brew使用官方源非常慢，可以按照参考中的方式切换为阿里镜像
+
+# 参考
+1. [brew更换国内镜像源]（https://blog.csdn.net/tzjvon/article/details/79648825）
+2. [mac下 brew 切换阿里镜像](https://blog.csdn.net/tzjvon/article/details/79648825)

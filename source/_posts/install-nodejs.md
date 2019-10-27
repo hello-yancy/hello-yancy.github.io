@@ -5,7 +5,7 @@ tags:
 - Node.js
 categories:
 - 软件开发
-- Node.js
+- JavaScript
 ---
 
 # Linux下安装Node.js

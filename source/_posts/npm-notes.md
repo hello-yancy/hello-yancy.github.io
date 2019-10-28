@@ -1,8 +1,8 @@
 ---
-title: npm常用命令
+title: Npm常用命令
 date: 2019-10-27 10:16:44
 tags:
-- npm
+- Npm
 categories:
 - 软件开发
 - JavaScript

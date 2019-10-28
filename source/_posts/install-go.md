@@ -5,6 +5,7 @@ tags:
 - Go
 categories:
 - 软件开发
+- 服务端
 ---
 
 # Linux下安装Go
